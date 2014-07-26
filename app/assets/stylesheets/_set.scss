@@ -3,22 +3,26 @@ $_tabbar-height: 60px;
 $_tabbar-width: 15rem;
 $_datasource-area-height: 54px;
 $_width_pixel: 2880;
-$_dark-color: #7f8c8d;
-
+$_black-color: #000000;
+$_dark-color: #333333;
+$_light-dark-color: #D4D8D9;
+$_white-color: #FFFFFF;
 
 // page color setting
-$_pattern: 3;
+$_pattern: 0;
 
-// default pattern
-$_base-bg-color: #1F1F1F;
-$_base-text-color: #FFFFFF;
-$_top-bg-color: #DA6272;
-$_top-text-color: #FFFFFF;
-$_side-bg-color: #FFFFFF;
-$_side-text-color: #000000;
-$_btn-hover-color: #D0394D;
-$_btn-list-bg-color: #cccccc;
-$_card-bg-color: #E3E3E3;
+// default pattern is brue base like
+$_base-bg-color: #E3E3E3;
+$_base-text-color: $_black-color;
+$_logo-color: $_white-color;
+$_top-bg-color: #134A63;
+$_top-text-color: $_light-dark-color;
+$_side-bg-color: $_white-color;
+$_side-text-color: $_black-color;
+$_btn-text-color: $_dark-color;
+$_btn-hover-color: #C2D4DB;
+$_btn-list-bg-color: #bbcad2;
+$_card-bg-color: $_white-color;
 
 @if $_pattern==1 {
 	// pattern 1 : light blue
@@ -41,15 +45,29 @@ $_card-bg-color: #E3E3E3;
 } @else if $_pattern == 3 {
 	// pattern 3 : blue base like pinterest
 	$_base-bg-color: #E3E3E3;
-	// $_base-bg-color: #ded7d5;
-	$_base-text-color: #000000;
+	$_base-text-color: $_black-color;
+	$_logo-color: $_white-color;
 	$_top-bg-color: #134A63;
+	$_top-text-color: $_light-dark-color;
+	$_top-bg-color-focus: #bbca2d;
+	$_side-bg-color: $_white-color;
+	$_side-text-color: $_black-color;
+	$_btn-text-color: $_dark-color;
+	$_btn-hover-color: #C2D4DB;
+	$_btn-list-bg-color: #cccccc;
+	$_card-bg-color: $_white-color;
+
+} @else if $_pattern == 4 {
+	$_base-bg-color: #1F1F1F;
+	$_base-text-color: #FFFFFF;
+	$_top-bg-color: #DA6272;
+	$_logo-color: $_white-color;
 	$_top-text-color: #FFFFFF;
 	$_side-bg-color: #FFFFFF;
 	$_side-text-color: #000000;
-	$_btn-hover-color: #C2D4DB;
+	$_btn-hover-color: #D0394D;
+	$_btn-text-color: $_dark-color;
 	$_btn-list-bg-color: #cccccc;
-	$_card-bg-color: #FFFFFF;
-
+	$_card-bg-color: #E3E3E3;
 }
 

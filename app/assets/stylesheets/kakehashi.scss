@@ -12,11 +12,13 @@ body{
 	}
 }
 
+
 #service-name {
 	text-align: center;
 	font-size: 2rem;
 	// font-weight: normal;
 	font-family: 'Codystar';
+	color: $_logo-color;
 }
 
 #trend-header {
@@ -47,8 +49,10 @@ body{
 	margin: auto auto auto auto;
 	text-align: left;
 	img {
-		width: 150px;
-		height: 150px;
+		width: 100%;
+		height: 200px;
+		// width: 150px;
+		// height: 150px;
 		// border-radius: 200px;
 		// -webkit-border-radius: 200px;
 		// -moz-border-radius: 200px;
@@ -93,9 +97,16 @@ body{
 	}
 }
 
-.top-bar-section {
+.top-bar-section, .right-small {
+	// 画像アイコン
+	i {
+		color: $_top-text-color;
+	}
+
 	.dropdown li:not(.has-form) a:not(.button) {
-		color: #333333;
+		// dropdown list text color
+		color: $_btn-text-color;
+		// dropdown list bg color
 		background: $_btn-list-bg-color;
 	}
 
@@ -103,9 +114,11 @@ body{
 		width: $_tabbar-width;
 	}
 
+	// 選択されているもののチェック
 	.dropdown {
 		i {
 			margin-left: 10px;
+			color: $_btn-text-color;
 		}
 		.not-selected {
 			display: none;

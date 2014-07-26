@@ -27,10 +27,12 @@
 //= require matches-selector/matches-selector.js
 //= require outlayer/item.js
 //= require outlayer/outlayer.js
+//= require masonry/masonry.js
 //= require isotope/js/layout-mode.js
 //= require isotope/js/item.js
 //= require isotope/js/isotope.js
 //= require isotope/js/layout-modes/fit-rows.js
+//= require isotope/js/layout-modes/masonry.js
 //= require kakehashi/kakehashi.js
 //= require_tree .
 //= require turbolinks
